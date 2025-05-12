@@ -6,6 +6,9 @@ from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 import os
 from fastapi.middleware.cors import CORSMiddleware
+from dotenv import load_dotenv
+
+load_dotenv()
 
 app = FastAPI()
 
