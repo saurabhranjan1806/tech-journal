@@ -16,7 +16,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-key = "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"
+key = os.getenv("OPENAI_API_KEY")
 
 llm = OpenAI(temperature=0.7, openai_api_key=key)
 
